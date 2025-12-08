@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akash // Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/4f8067caab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/AKASHHH2.png" class="Logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi, I'm <span>Akash</span><br> From West Bengal</h1>
+      </div>
+    </div>
+  </div>
+  <!---------------------------About-------------------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col1">
+          <img src="images/imgNew.jpg">
+        </div>
+        <div class="about-col2">
+          <h1 class="subtitle">About Me</h1>
+          <p>I'm a tech and as well as hardware enthusiast skilled in front-end development (HTML, CSS, JavaScript),
+            C/C++ with DSA, and data tools like Tally, Power BI, and Excel. I love building efficient solutions and
+            exploring the intersection of code and data and also trying to build some core electronics projects.</p>
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('certification')">Certification</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Accounting Software</span><br>Tally ERP 9</li>
+              <li><span>Data Analysis & Visualization</span><br>Power BI, MS Excel</li>
+              <li><span>Frontend Development</span><br>HTML, CSS, JavaScript</li>
+              <li><span>Programming Languages</span><br>C, C++</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Secondary Education</span><br>
+                Eastern Railway High School<br>
+                90% (WBBSE, 2019)
+              </li>
+
+              <li><span>Higher Secondary Education</span><br>
+                Ondal High School<br>
+                82% (WBBSE, 2021)
+              </li>
+
+              <li><span>Bachelor of Technology(ECE)</span><br>
+                Kalyani Government Engineering College<br>
+                Currently Pursuing
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="certification">
+            <ul>
+              <li><span>Vocational Training Certificate</span><br>Offline and practical experience with Optical Fiber
+                Tele-Communication System of
+                Railway Services at Asansol DRM Office.</li>
+              <li><span>ICAT Exam Certificate</span><br>Participated in Internship Common Aptitude Test (ICAT) and
+                secured 1479 All India Rank
+                on the InternshipStudio Platform.</li>
+              <li><span>Python Certificate </span><br>Completed a 60-hour training on Machine Learning with Python
+                conducted by WorkBuds.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-----------------Sevices------------------>
+  <div id="services">
+    <div class="container">
+      <h1 class="subtitle">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-brands fa-uikit"></i>
+          <h2>UI Design</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio praesentium nostrum veritatis, alias
+            magni itaque modi.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-chart-line"></i>
+          <h2>DashBoard Creation</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio praesentium nostrum veritatis, alias
+            magni itaque modi.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-file-invoice-dollar"></i>
+          <h2>Account Management</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio praesentium nostrum veritatis, alias
+            magni itaque modi.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--------------------portfolio-------------------->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="subtitle">My Work</h1>
+      <div class="worklist" id="worklist">
+        <div class="work">
+          <img src="images/dash.png">
+          <div class="layer">
+            <h3>Professional Dashboard</h3>
+            <p>This dashboard provides a comprehensive view of mobile sales, helping business track performance and make
+              data-driven decisions.</p>
+            <a href="https://drive.google.com/drive/folders/1vJnVQ3elQrp0LBDL8-_r99XOEZZR4rPX"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/lifi2.jpeg">
+          <div class="layer">
+            <h3>Data Transmission System</h3>
+            <p>Engineered a Li-Fi based data transmission system that facilitated high-speed, secure communication using
+              visible light, optimizing network bandwidth utilization using solar pannel.</p>
+            <a href="https://drive.google.com/drive/folders/1vJnVQ3elQrp0LBDL8-_r99XOEZZR4rPX"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/chatbott.png">
+          <div class="layer">
+            <h3>AI Chatbot: JARVIS</h3>
+            <p>A smart voice assistant capable of: Sending WhatsApp messages directly through WhatsApp Web, Playing any
+              song
+              instantly from YouTube, Opening social media platforms like Facebook, LinkedIn more with simple voice
+              commands..</p>
+            <a
+              href="https://www.linkedin.com/posts/akash-poddar-0b71a2254_python-ai-automation-activity-7391364495476060161-15da?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD6tBAsBGqwDlj3Gt5_POQQ9Usc6XF-O8QU"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <button id="seeMoreBtn" class="btn toggle" aria-expanded="false">See more</button>
+    </div>
+  </div>
+  <!--------------------contact----------------------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contactleft">
+          <h1 class="subtitle">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+          <p><i class="fa-solid fa-phone"></i>0123456789</p>
+          <div class="socialicons">
+            <a href="https://www.facebook.com/share/1C2xVHYrAm/" target="_blank"><i
+                class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/otakuodyssey_814?igsh=a3FhNzh5ejY1M3Vu" target="_blank"><i
+                class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/akash-poddar-0b71a2254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="images/Modified Cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contactright">
+          <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Messege" rows="6" placeholder="Your Messege"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <Span id="msg"></Span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Akash. Made by Me</p>
+    </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link")
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab")
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      try {
+        const projects = [
+          {
+            img: "images/dash2.png",
+            title: "Python Dash",
+            desc: "Built a interactive sales dashboard and integrated multiple data sources, added advanced analytics and transformed static reports into actionable insights",
+            href: "https://interactive-sales-dashboard-3.onrender.com"
+          },
+          {
+            img: "images/game.png",
+            title: "Text Based Game",
+            desc: "Created an immersive browser-based adventure game using Python and Flask, complete with branching narrative paths, reactive environments, and animated UI elements",
+            href: "https://echos-of-vael-3.onrender.com"
+          },
+          // {
+          //   img: "images/project6.png",
+          //   title: "Mini Robotics",
+          //   desc: "Built a line-following robot using Arduino Nano and sensors; implemented PID tuning for speed stability.",
+          //   href: "#"
+          // }
+        ];
+
+        const worklist = document.getElementById('worklist');
+        const btn = document.getElementById('seeMoreBtn');
+
+        if (!worklist) {
+          console.error("See-more script: element with id 'worklist' not found.");
+          return;
+        }
+        if (!btn) {
+          console.error("See-more script: element with id 'seeMoreBtn' not found.");
+          return;
+        }
+
+        let expanded = false;
+        const appended = [];
+
+        function createCard(p) {
+          const work = document.createElement('div');
+          work.className = 'work';
+          const img = document.createElement('img');
+          img.src = p.img;
+          img.alt = p.title;
+          const layer = document.createElement('div');
+          layer.className = 'layer';
+          const h3 = document.createElement('h3');
+          h3.textContent = p.title;
+          const ptag = document.createElement('p');
+          ptag.textContent = p.desc;
+          const a = document.createElement('a');
+          a.href = p.href || '#';
+          a.setAttribute('aria-label', `Open ${p.title}`);
+          a.innerHTML = '<i class="fa-solid fa-arrow-up-right-from-square"></i>';
+
+          layer.appendChild(h3);
+          layer.appendChild(ptag);
+          layer.appendChild(a);
+
+          work.appendChild(img);
+          work.appendChild(layer);
+
+          return work;
+        }
+
+        function showMore() {
+          projects.forEach(proj => {
+            const c = createCard(proj);
+            worklist.appendChild(c);
+            appended.push(c);
+          });
+        }
+
+        function hideMore() {
+          while (appended.length) {
+            const node = appended.pop();
+            node.remove();
+          }
+        }
+
+        btn.addEventListener('click', function (ev) {
+          ev.preventDefault();
+          expanded = !expanded;
+          if (expanded) {
+            showMore();
+            btn.textContent = 'See less';
+            btn.setAttribute('aria-expanded', 'true');
+            console.log("See-more: appended", projects.length, "projects.");
+          } else {
+            hideMore();
+            btn.textContent = 'See more';
+            btn.setAttribute('aria-expanded', 'false');
+            console.log("See-more: removed appended projects.");
+          }
+        });
+
+        console.log("See-more script loaded successfully.");
+      } catch (err) {
+        console.error("See-more script error:", err);
+      }
+    });
+  </script>
+</body>
+
+</html>
