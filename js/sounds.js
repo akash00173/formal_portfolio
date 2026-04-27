@@ -3,7 +3,7 @@
    Developer-themed sounds using Web Audio API
    ============================================ */
 
-let soundEnabled = true;
+let soundEnabled = false;
 let audioContext = null;
 
 /**
@@ -205,6 +205,7 @@ function toggleSound() {
     playSuccessSound();
   }
 }
+window.toggleSound = toggleSound;
 
 /**
  * Attach sounds to elements

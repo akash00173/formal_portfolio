@@ -100,6 +100,7 @@ function toggleMenu() {
     icon.classList.add('fa-bars');
   }
 }
+window.toggleMenu = toggleMenu;
 
 // Close menu when clicking a link
 document.querySelectorAll('.nav-links a').forEach(link => {

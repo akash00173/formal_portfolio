@@ -1,6 +1,6 @@
 // ============================================
-   AKASH PORTFOLIO - CUSTOM FEATURES
-   ============================================ */
+   // AKASH PORTFOLIO - CUSTOM FEATURES
+   // ============================================
 const matrixCanvas = document.getElementById('matrix-canvas');
 const ctx = matrixCanvas.getContext('2d');
 matrixCanvas.width = window.innerWidth;
@@ -86,11 +86,14 @@ function scrollToSection(id) {
 }
 
 function searchCommands() {
-  const input = document.getElementById('command-input').value.toLowerCase();
+  const input = document.getElementById('command-input');
   const results = document.getElementById('command-results');
+  if (!input || !results) return;
+  
+  const query = input.value.toLowerCase();
   results.innerHTML = '';
 
-  commands.filter(c => c.name.toLowerCase().includes(input)).forEach(c => {
+  commands.filter(c => c.name.toLowerCase().includes(query)).forEach(c => {
     const div = document.createElement('div');
     div.className = 'command-result';
     div.textContent = c.name;
