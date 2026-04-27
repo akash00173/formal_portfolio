@@ -6,7 +6,7 @@ This project is designed to showcase my skills, projects, experience, and contac
 
 ## 🚀 Live Demo
 
-🔗 [View Live Portfolio](https://akash00173.github.io/formal-portfolio/)
+🔗 [View Live Portfolio](https://formal-portfolio-xyz.vercel.app/)
 
 ## 📁 Repository
 
@@ -45,4 +45,3 @@ Feel free to reach out for collaboration or feedback!
 
 ⭐️ If you like this project, give it a star!  
 📌 Feel free to fork or contribute!
-a
