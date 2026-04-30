@@ -36,7 +36,7 @@ document.addEventListener('mousemove', (e) => {
 });
 
 // Add hover effect to interactive elements
-document.querySelectorAll('a, button, .portfolio-card, .service-card').forEach(el => {
+document.querySelectorAll('a, button, .portfolio-card, .service-card, .certificate-link').forEach(el => {
   el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
   el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
 });
@@ -144,7 +144,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-document.querySelectorAll('.service-card, .portfolio-card, .skill-item').forEach(el => {
+document.querySelectorAll('.service-card, .portfolio-card, .skill-item, .resume-content').forEach(el => {
   el.style.opacity = '0';
   el.style.transform = 'translateY(30px)';
   el.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
@@ -179,3 +179,17 @@ function closeQREvent(e) {
 
 // Make globally accessible
 window.closeQR = closeQRModal;
+
+// Keyboard shortcuts
+document.addEventListener('keydown', function(e) {
+  // Don't trigger if user is typing in an input
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+  const key = e.key.toLowerCase();
+
+  // D key - Download CV
+  if (key === 'd') {
+    e.preventDefault();
+    window.open('images/FullStack_CV.pdf', '_blank');
+  }
+});
